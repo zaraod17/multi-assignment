@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <div id="app">
+      <nav class="navbar bg-white fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/assets/muliprojekt-logo.png"
+              alt="logo"
+              width="140"
+              height="40"
+            />
+          </a>
+        </div>
+      </nav>
+      <img
+        src="https://www.multiprojekt.pl/wp-content/uploads/2020/05/Oferta_Wizualizacja_00b.jpg"
+        alt="main photo"
+        class="img-fluid"
+        style="width: 100%"
+      />
+      <div class="mt-5 pt-5 px-5 bg-white">
+        <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#desc-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="desc-tab-pane"
+              aria-selected="true"
+            >
+              Opis
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#app-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="app-tab-pane"
+              aria-selected="false"
+            >
+              Zastosowanie
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#criteria-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="criteria-tab-pane"
+              aria-selected="false"
+            >
+              Kryteria
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#func-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="func-tab-pane"
+              aria-selected="false"
+            >
+              Cechy
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active pt-4 ps-5 pe-5"
+            id="desc-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <h2>Panele operatorskie HMI - do czego służą?</h2>
+            <p class="pt-3">
+              Panel HMI (Human Machine Interface) jest jednym z podstawowych
+              podzespołów większości maszyn przemysłowych. Służy on do właściwej
+              komunikacji pomiędzy człowiekiem, a maszyną. To właśnie dzięki
+              niemu można nadawać różnego rodzaju komendy, które następnie będą
+              wykonywane. Panele operatorskie HMI mają najczęściej postać ekranu
+              dotykowego, nierzadko uzupełnionego o przyciski fizyczne. Za
+              pomocą autorskiego oprogramowania producenta możliwe jest
+              wprowadzanie danych, wartości oraz parametrów niezbędnych do
+              wykonania różnego rodzaju czynności przez maszynę.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade pt-4 ps-5 pe-5"
+            id="app-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+          >
+            <h2>Zastosowanie paneli HMI</h2>
+            <p>
+              Tego typu urządzenie znajduje swoje szerokie zastosowanie przede
+              wszystkim w przemyśle oraz w procesach technologicznych. Oprócz
+              tego panele HMI są wykorzystywane w procesach, w których niezbędna
+              jest wizualizacja. Dzięki łatwemu wprowadzaniu danych, urządzenia
+              te są często stosowane w maszynach sterowanych numerycznie, gdzie
+              wybór narzędzia czy też szereg innych parametrów może być
+              dostosowanych z poziomu panelu. Panele operatorskie HMI zapewniają
+              możliwość monitorowania pracy maszyn, a dodatkowo dzięki ich
+              zastosowaniu możliwa jest rejestracja danych z procesów
+              technologicznych. Bardzo często tego typu urządzenia stosuje się
+              do obsługi nie tylko pojedynczej maszyny, ale nawet całej linii
+              produkcyjnej. Dzięki temu proces wytwórczy może przebiec w
+              możliwie najbardziej zoptymalizowanych warunkach.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade pt-4 ps-5 pe-5"
+            id="criteria-tab-pane"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+            tabindex="0"
+          >
+            <h2>Kryteria doboru paneli operatorskich</h2>
+            <p>
+              W wielu aplikacjach panel, po pierwsze służy do przetwarzania i
+              gromadzenia danych, a dopiero później do wizualizacji. W
+              zależności od przeznaczenia oraz stopnia zautomatyzowania naszego
+              urządzenia, zastosujemy różne modele paneli sterowniczych. Na
+              rynku dostępnych jest wiele rodzajów paneli HMI, które różnią się
+              od siebie podstawowymi parametrami oraz dodatkowymi
+              funkcjonalnościami. <a cla href="#">Kryteria doboru</a>, które
+              warto wziąć pod uwagę to:
+            </p>
+
+            <ul>
+              <li>Przekątna ekranu</li>
+              <li>Rozdzielczość</li>
+              <li>Interfejsy komunikacyjne</li>
+              <li>Stopień ochrony IP i temperatura pracy</li>
+              <li>Z ekranem czy bez</li>
+              <li>Sposób montażu</li>
+              <li>Zasilanie</li>
+            </ul>
+            Warto zaznaczyć, że interfejs komunikacyjny powinien być możliwie
+            najprostszy i najbardziej intuicyjny. Pozwoli to na wygodną obsługę
+            panelu bez konieczności długotrwałej nauki zasady jego działania.
+            Podstawowe urządzenia HMI kosztują w granicach 700-1300 zł. Bardziej
+            rozbudowane funkcjonalnie systemy, które są przeznaczone do całych
+            linii produkcyjnych mogą kosztować dziesiątki, a nawet setki tysięcy
+            złotych.
+          </div>
+          <div
+            class="tab-pane fade pt-4 ps-5 pe-5"
+            id="func-tab-pane"
+            role="tabpanel"
+            aria-labelledby="disabled-tab"
+            tabindex="0"
+          >
+            <h2>Cechy paneli HMI marki Weintek:</h2>
+            <p></p>
+            <ul>
+              <li>
+                ekrany o przekątnych od 4.3″ aż do 21″ lub dowolnej wielkości
+                przez złącze HDMI
+              </li>
+              <li>interfejsy RS232 / RS485 i Ethernet</li>
+              <li>wydajne procesory (do 1.6 GHz Quad Core 64bit)</li>
+              <li>
+                powłoka zabezpieczająca płytkę elektroniczną przed korozją
+              </li>
+              <li>zabezpieczenie przeciwprzepięciowe zasilania</li>
+              <li>
+                model eMT3070B przeznaczony do pracy w niskich temperaturach
+                (nawet od -20˚C)
+              </li>
+              <li>
+                wybrane modele przeznaczone do współpracy z monitorami i
+                telewizorami (mTV-100, cMT-FHDX)
+              </li>
+              <li>modele z certyfikatem ATEX do stref zagrożonych wybuchem</li>
+              <li>możliwość centralizacji danych z MQTT w chmurze</li>
+              <li>
+                możliwość wizualizacji także na urządzeniach mobilnych
+                (aplikacja dla Android, iOS, Windows)
+              </li>
+              <li>szyfrowany tunel VPN – usługa EasyAccess 2.0 (Opcja)</li>
+              <li>zróżnicowane opcje montażu</li>
+              <li>
+                bezpłatne oprogramowanie narzędziowe w polskiej wersji językowej
+              </li>
+              <li>
+                wybrane modele serii cMT-X obsługują gesty na ekranie dotykowym
+                i wizualizację przez przeglądarkę www
+              </li>
+            </ul>
+
+            <p class="pt-3">
+              <strong
+                >Dbając o najwyższe standardy zawsze zaleca aktualizację
+                oprogramowania sprzętowego do najnowszej wersji.</strong
+              >
+            </p>
+            <p>
+              <span class="text-decoration-underline"
+                >Firma Multiprojekt Automatyka jest wyłącznym dystrybutorem
+                produktów Weintek w Polsce.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-5 text-blue bg-white mb-1">
+        <h2>Panele operatorskie HMI Weintek - główne serie</h2>
+      </div>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel carousel-dark carousel-fade slide bg-white"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative overflow-auto">
+            <img
+              class="w-50 pb-5"
+              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_cMT-1-parvbf019bf68cfwml5e255o9kwa1fz32ss781heao.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h3 class="slide-desc">Seria cMT</h3>
+            <div class="bar">
+              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#des-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="desc-tab-pane"
+                    aria-selected="true"
+                  >
+                    Opis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#adv-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="app-tab-pane"
+                    aria-selected="false"
+                  >
+                    Zalety
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active pt-3 ps-2 pe-5"
+                  id="des-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <p class="pt-3">
+                      cMT to nowa seria interfejsów operatora od Weintek. Jej
+                      wyróżnikiem jest możliwość wyświetlenie zaszytej w
+                      urządzeniu wizualizacji, w oknie dedykowanej aplikacji
+                      cMT-Viewer, istniejącej dla systemu Windows, Android, iOS.
+                      Dzięki tej aplikacji nawet urządzenie mobilne, jak tablet
+                      czy smartfon, może stać się interfejsem operatora. Jest to
+                      alternatywa dla powszechnie stosowanego w panelach
+                      operatorskich połączenia z serwerem VNC. Brak możliwości
+                      przesyłania obrazu w sieci powoduje, że grafika generowana
+                      jest przez procesor urządzenia uruchamiającego aplikacje
+                      cMT-Viewer). Co ważne, wizualizacja działa niebywale
+                      płynnie oraz charakteryzuje się wysoką rozdzielczością i
+                      głębia kolorów. Nie jest to też pulpit zdalny, zatem w
+                      przypadku korzystania w wizualizacji przez wielu
+                      użytkowników, nie przeszkadzają oni sobie nawzajem.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary mt-5"
+                      style="margin-left: 15%"
+                      href="#"
+                      role="button"
+                      >Seria cMT</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pt-4 ps-5 pe-5"
+                  id="adv-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <ul>
+                      <li>
+                        ukierunkowanie na magazynowanie i przetwarzanie
+                        rozproszonych informacji
+                      </li>
+                      <li>
+                        wsparcie wymiany danych z serwerami MySQL oraz MS SQL
+                        Server
+                      </li>
+                      <li>obsługa protokołu OPC UA jako serwer</li>
+                      <li>rozbudowane wsparcie protokołu MQTT</li>
+                      <li>
+                        odświeżony interfejs Web 2.0 zapewniający lepsze
+                        doświadczenia podczas konfiguracji oraz przedstawiający
+                        zebrane dane w czytelniejszy sposób
+                      </li>
+                      <li>
+                        szyfrowana transmisja danych zapewniająca
+                        bezpieczniejszy dostęp sieciowy
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-primary mt-4"
+                      href="#"
+                      role="button"
+                      >Seria cMT</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative overflow-auto">
+            <img
+              class="w-50 pb-5"
+              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_XE-1-parwfxtjw6w6r5kw03qdjx127l5xvouhzd9s1hee1s.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h3 class="slide-desc">Seria XE</h3>
+            <div class="bar">
+              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#d-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="desc-tab-pane"
+                    aria-selected="true"
+                  >
+                    Opis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#a-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="app-tab-pane"
+                    aria-selected="false"
+                  >
+                    Zalety
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active pt-3 ps-2 pe-5"
+                  id="d-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <p class="pt-3">
+                      Seria XE paneli operatorskich HMI doskonale sprawdzi się w
+                      trudnych warunkach pracy. Urządzenia wyposażone są w
+                      wydajny procesor Cortex A8 1 GHz. Ekrany o wysokich
+                      rozdzielczościach pozwalają wyświetlić najbardziej złożoną
+                      wizualizację z najdrobniejszymi szczegółami w
+                      rozdzielczości 1024 x 768 px. Aluminiowa obudowa w
+                      modelach 12” i 15” zwiększa trwałość i niezawodność.
+                      Optoizolacja zasilania zapewnia pracę w trudnych
+                      warunkach. Panele operatorskie HMI posiadają także powłokę
+                      zabezpieczającą płytkę drukowaną, która zwiększa odporność
+                      na wilgoć, pył i korozję. Co więcej, wbudowana izolacja
+                      galwaniczna portu RS485 efektywnie zapobiega uszkodzeniu
+                      elektroniki w przypadku powstania różnic potencjałów w
+                      trudnym środowisku pracy.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary mt-5"
+                      style="margin-left: 15%"
+                      href="#"
+                      role="button"
+                      >Seria XE</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pt-4 ps-5 pe-5"
+                  id="a-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <ul>
+                      <li>aluminiowa obudowa w modelach 12” i 15”</li>
+                      <li>aluminiowa obudowa w modelach 12” i 15”</li>
+                      <li>szeroki kąt widzenia (aż do 70%)</li>
+                      <li>oprogramowanie narzędziowe EasyBuilder Pro</li>
+                      <li>obsługa ponad 300 driversów komunikacyjnych</li>
+                      <li>wydajny procesor Cortex A8 1 GHz</li>
+                      <li>prędkość uruchomienia: 12 sekund</li>
+                      <li>szybkość transmisji danych PLC: 540 bajtów/s</li>
+                      <li>
+                        czas wyświetlania pliku JPEG: 2 Mb/10 stron w ciągu 0,4
+                        s
+                      </li>
+                      <li>
+                        szeroki wybór modeli w zależności od parametrów: rozmiar
+                        (9,7″, 12,1″, 15″), jasność (350, 400, 500 cd/m²),
+                        rozdzielczość, paleta kolorów, wielkość pamięci itd.
+                      </li>
+                      <li>
+                        certyfikat CE oraz stopień ochrony IP65/IP66 (MT8121XE)
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-primary mt-4"
+                      href="#"
+                      role="button"
+                      >Seria XE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative overflow-auto">
+            <img
+              class="w-50 pb-5"
+              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_iE-1-parwjmcsntxm868di70rthl1yx0p10gnhl98phxvog.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h3 class="slide-desc">Seria iE</h3>
+            <div class="bar">
+              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#q-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="desc-tab-pane"
+                    aria-selected="true"
+                  >
+                    Opis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#w-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="app-tab-pane"
+                    aria-selected="false"
+                  >
+                    Zalety
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active pt-3 ps-2 pe-5"
+                  id="q-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <p class="pt-3">
+                      Panele operatorskie HMI serii iE z łatwością zainstalujesz
+                      w dowolnej instalacji przemysłowej. Dzięki ultra cienkiej
+                      obudowie montaż możliwy jest nawet w małych szafach
+                      sterowniczych. Urządzenia wyposażone są w mocny procesor
+                      Cortex A8 600MHz. Panele HMI tej serii posiadają powłokę
+                      zabezpieczającą płytkę drukowaną, zwiększającą odporność
+                      na wilgoć, pył i korozję. Dzięki czemu urządzenia mogą
+                      działać w trudnych warunkach przez długie lata. Wbudowana
+                      izolacja galwaniczna portu RS485, w przypadku powstania
+                      różnic potencjałów w trudnym środowisku pracy,
+                      przeciwdziała uszkodzeniu elektroniki.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary mt-5"
+                      style="margin-left: 15%"
+                      href="#"
+                      role="button"
+                      >Seria iE</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pt-4 ps-5 pe-5"
+                  id="w-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <ul>
+                      <li>ultra cienka obudowa (grubość panelu 34 mm)</li>
+                      <li>
+                        dwa porty Ethernet umożliwiają skonfigurowanie sieci
+                        WAN/LAN lub dwóch różnych konfiguracji sieci LAN/LAN
+                        (dotyczy MT8073iE/MT8053iE)
+                      </li>
+                      <li>
+                        wbudowane standardy komunikacji bezprzewodowej Wi-Fi
+                        802.11 b/g/n (w modelu MT8103iE)
+                      </li>
+                      <li>
+                        wydajny procesor Cortex A8 600 MHz wyznacza standardy
+                        wydajności HMI
+                      </li>
+                      <li>prędkość uruchomienia: 13,8 sekund</li>
+                      <li>szybkość transmisji danych PLC: 560 bajtów/s</li>
+                      <li>
+                        czas wyświetlania pliku JPEG: 2 Mb/10 stron w ciągu 0,4
+                        s
+                      </li>
+                      <li>
+                        szeroki wybór modeli w zależności od parametrów: rozmiar
+                        (4,3″, 7″, 10,1″), jasność (300, 350, 400 cd/m²),
+                        rozdzielczość, paleta kolorów, wielkość pamięci itd.
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-primary mt-4"
+                      href="#"
+                      role="button"
+                      >Seria iE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative overflow-auto">
+            <img
+              class="w-50 pb-5"
+              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_eMT-1-parwox61776tp0j7jzi1dnfmk4w7fki5vtot4o2ylc.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h3 class="slide-desc">Seria eMT3070B</h3>
+            <div class="bar">
+              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#q-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="desc-tab-pane"
+                    aria-selected="true"
+                  >
+                    Opis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#w-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="app-tab-pane"
+                    aria-selected="false"
+                  >
+                    Zalety
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active pt-3 ps-2 pe-5"
+                  id="q-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <p class="pt-3">
+                      Nowoczesny przemysłowy panel operatorski serii eMT3000 to
+                      zaawansowane urządzenie, które idealnie sprawdzi się w
+                      warunkach przemysłowych. Panele te posiada szybki
+                      mikroprocesor 600/800 MHz, który zapewnia doskonałą
+                      komunikację, wspiera obsługę wyświetlania grafiki i
+                      tworzenia skomplikowanych animacji oraz oferuje możliwość
+                      przełączania stron bez opóźnień. Te panel HMI posiadają
+                      rozbudowany system zabezpieczeń hasłami oraz kluczem
+                      sprzętowym USB. Urządzenie dostarcza powiadomienia o
+                      alarmach i zdarzeniach oraz cykliczne raporty. Co więcej,
+                      posiada edytor receptur ułatwiający operacje na dużej
+                      liczbie danych oraz funkcję logowania czynności operatora,
+                      która rejestruje czynności wykonywane na panelu.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary mt-5"
+                      style="margin-left: 15%"
+                      href="#"
+                      role="button"
+                      >Seria eMT</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pt-4 ps-5 pe-5"
+                  id="w-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <ul>
+                      <li>trwała aluminiowa obudowa</li>
+                      <li>temperatura pracy od -20 stopni Celsjusza</li>
+                      <li>obsługa protokołu CANopen</li>
+                      <li>optoizolacja wejścia 24VDC</li>
+                      <li>optoizolacja RS 232/RS485/magistrali CAN</li>
+                      <li>szybkość transmisji danych PLC: 560 bajtów/s</li>
+                      <li>
+                        czas wyświetlania pliku JPEG: 2 Mb/10 stron w ciągu 0,4
+                        s
+                      </li>
+                      <li>
+                        czułe, dokładne i niezawodne matryce dotykowe
+                        umożliwiają co najmniej milion dotknięć
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-primary mt-4"
+                      href="#"
+                      role="button"
+                      >Seria eMT</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative overflow-auto">
+            <img
+              class="w-50 pb-5"
+              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_iP-1-parx2cb2s1k7gl1f6sc9z9ijw6qvbzs7290dsw6lr4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h3 class="slide-desc">Seria iP</h3>
+            <div class="bar">
+              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#q-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="desc-tab-pane"
+                    aria-selected="true"
+                  >
+                    Opis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#w-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="app-tab-pane"
+                    aria-selected="false"
+                  >
+                    Zalety
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active pt-3 ps-2 pe-5"
+                  id="q-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <p class="pt-3">
+                      Seria paneli iP to seria ekonomiczna, która w ostatnim
+                      czasie została wzbogacona o wsparcie wielu funkcji
+                      programowych, przez co jej funkcjonalność zbliżyła się do
+                      funkcjonalności paneli serii IE. Co ważne, aktualnie
+                      wszystkie dostępne modele paneli HMI posiadają złącze
+                      Ethernet RJ-45. Panele operatorskie HMI tej serii zostały
+                      zmodernizowane, tak aby zapewnić krótszy czas
+                      uruchamiania, lepszą wydajność i wizualizację na większym
+                      poziomie. W starej wersji serii IP, czas uruchamiania
+                      wynosił 23,41 s, w nowej już tylko 13,43 s. Ulepszone
+                      panele osiągnęły dużo lepszą wydajność – czas ładowania
+                      tekstu poprawił się o 326%, kształtów o 477%, a obrazu o
+                      2130%. Co więcej, wizualizacja wzrosła z 65 536 do 16,2
+                      miliona kolorów.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary mt-5"
+                      style="margin-left: 15%"
+                      href="#"
+                      role="button"
+                      >Seria iP</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pt-4 ps-5 pe-5"
+                  id="w-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <ul>
+                      <li>ultra cienka obudowa (grubość panelu 34 mm)</li>
+                      <li>
+                        wyposażony w procesor Cortex A 600 MHz, pamięć flash 128
+                        MB, 128 MB pamięci RAM
+                      </li>
+                      <li>wyświetlacze o palecie 16M / 16.2M kolorów</li>
+                      <li>
+                        rozdzielczość do 1024×600 px (w zależności od modelu)
+                      </li>
+                      <li>
+                        obsługa ponad 300 sterowników PLC i kontrolerów różnych
+                        marek
+                      </li>
+                      <li>
+                        bezproblemowa migracja z EB8000 do EasyBuilder Pro
+                      </li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-primary mt-4"
+                      href="#"
+                      role="button"
+                      >Seria iP</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative overflow-auto">
+            <img
+              class="w-50 pb-5"
+              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_mTV-1-parxhtpdcsr8pcjrrza1juuw5ofj4i90uvvbdz859c.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h3 class="slide-desc">Seria mTV-100</h3>
+            <div class="bar">
+              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#q-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="desc-tab-pane"
+                    aria-selected="true"
+                  >
+                    Opis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#w-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="app-tab-pane"
+                    aria-selected="false"
+                  >
+                    Zalety
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active pt-3 ps-2 pe-5"
+                  id="q-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <p class="pt-3">
+                      Panel ten nie posiada własnego ekranu. Natomiast posiada
+                      złącze HDMI, które umożliwia wyświetlenie wizualizacji na
+                      dowolnie dużym monitorze lub telewizorze. Urządzenie
+                      charakteryzuje się kompaktową obudową do zamontowania na
+                      szynie DIN. Monitor dotykowy może być podłączony do portu
+                      USB. Co więcej, port COM1 (RS485) obsługuje protokół MPI
+                      187.5k. Oprogramowanie narzędziowe EasyBuilder Pro oferuje
+                      ponad 300 driverów komunikacyjnych do różnych urządzeń
+                      istniejących na rynku. Model ten charakteryzuje się łatwą
+                      instalacją w większości aplikacji.
+                      <a
+                        class="btn btn-outline-primary mt-5"
+                        style="margin-left: 15%"
+                        href="#"
+                        role="button"
+                        >Seria mTV</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pt-4 ps-5 pe-5"
+                  id="w-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <ul>
+                      <li>wyjście HDMI o wysokiej rozdzielczości HD 720p</li>
+                      <li>
+                        kompaktowa konstrukcja i możliwość montażu na szynie DIN
+                      </li>
+                      <li>system chłodzenia bez wentylatora</li>
+                      <li>wbudowana pamięć flash 256 MB</li>
+                      <li>gniazdo kart SD do rozszerzenia pamięci</li>
+                      <li>obsługa protokołu MPI 187.5k</li>
+                    </ul>
+                    <a
+                      class="btn btn-outline-primary mt-4"
+                      href="#"
+                      role="button"
+                      >Seria mTV</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev bg-primary"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next bg-primary"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="ms-5" align-center>
+        <h2 class="mt-5">Materiały techiczne</h2>
+        <a class="btn btn-outline-primary mt-4" href="#" role="button"
+          >Pobierz katalog</a
+        >
+      </div>
+    </div>
+  </body>
+
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Darmowe oprogramowanie</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Kurs online</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Filmiki instruktażowe</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Webinary</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Katalog</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Szkolenia</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Wsparcie techniczne</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Karty katalogowe</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Rysunki</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Instrukcje</a>
+      </li>
+    </ul>
+  </footer>
+</html>

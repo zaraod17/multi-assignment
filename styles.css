@@ -1,0 +1,43 @@
+#app {
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body h2 {
+  color: #2980c4;
+}
+
+nav .container {
+  margin-left: 0;
+}
+
+.tab-pane h2 {
+  color: #2980c4;
+}
+
+.container-fluid h2 {
+  color: #2980c4;
+}
+
+button.carousel-control-prev,
+button.carousel-control-next {
+  height: auto;
+  width: 44px;
+  background: none;
+  margin: auto 0;
+  margin-top: auto;
+}
+
+.carousel-item .slide-desc {
+  display: inline;
+  position: absolute;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+.carousel-item .bar {
+  display: inline;
+  position: absolute;
+  margin-top: 10%;
+}
