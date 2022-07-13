@@ -6,6 +6,7 @@
 
 body h2 {
   color: #2980c4;
+  animation: fadeInLeft 1s ease-in;
 }
 
 nav .container {
@@ -41,3 +42,41 @@ button.carousel-control-next {
   position: absolute;
   margin-top: 10%;
 }
+
+.tab-pane,
+.nav-item {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.nav-item:active {
+  background-color: #2980c4;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-tabs,
+  .footer,
+  .tab-content {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+

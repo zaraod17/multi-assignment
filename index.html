@@ -19,28 +19,53 @@
       crossorigin="anonymous"
     ></script>
 
-    <div id="app">
+    <div id="app" class="d-grid">
       <nav class="navbar bg-white fixed-top shadow-sm">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
-              src="/assets/muliprojekt-logo.png"
+              src="./assets/muliprojekt-logo.png"
+              class="d-block"
               alt="logo"
-              width="140"
-              height="40"
+              style="width: 15%;"
+
             />
           </a>
         </div>
       </nav>
-      <img
-        src="https://www.multiprojekt.pl/wp-content/uploads/2020/05/Oferta_Wizualizacja_00b.jpg"
-        alt="main photo"
-        class="img-fluid"
-        style="width: 100%"
-      />
+
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide shadow"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="./assets/baner_pic1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/baner_pic2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/baner_pic3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
       <div class="mt-5 pt-5 px-5 bg-white">
         <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
+          <li class="nav-item " role="presentation">
             <button
               class="nav-link active"
               id="home-tab"
@@ -106,7 +131,7 @@
             tabindex="0"
           >
             <h2>Panele operatorskie HMI - do czego służą?</h2>
-            <p class="pt-3">
+            <p class="pt-3 ">
               Panel HMI (Human Machine Interface) jest jednym z podstawowych
               podzespołów większości maszyn przemysłowych. Służy on do właściwej
               komunikacji pomiędzy człowiekiem, a maszyną. To właśnie dzięki
@@ -239,14 +264,14 @@
         </div>
       </div>
 
-      <div class="container-fluid mt-5 text-blue bg-white mb-1">
+      <div class="container-fluid mt-5 text-blue bg-white pb-1 pt-1">
         <h2>Panele operatorskie HMI Weintek - główne serie</h2>
       </div>
 
       <div
         id="carouselExampleCaptions"
-        class="carousel carousel-dark carousel-fade slide bg-white"
-        data-bs-ride="false"
+        class="carousel carousel-dark carousel-fade shadow bg-white"
+        data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
           <button
@@ -289,16 +314,19 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active position-relative overflow-auto">
+          <div
+            class="carousel-item active position-relative overflow-auto"
+            data-bs-interval="10000"
+          >
             <img
               class="w-50 pb-5"
-              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_cMT-1-parvbf019bf68cfwml5e255o9kwa1fz32ss781heao.jpg"
+              src="./assets/pic1.jpg"
               class="d-block w-100"
               alt="..."
             />
             <h3 class="slide-desc">Seria cMT</h3>
             <div class="bar">
-              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+              <ul class="nav nav-tabs shadow me-5" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
@@ -407,13 +435,17 @@
           <div class="carousel-item position-relative overflow-auto">
             <img
               class="w-50 pb-5"
-              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_XE-1-parwfxtjw6w6r5kw03qdjx127l5xvouhzd9s1hee1s.jpg"
+              src="./assets/pic2.jpg"
               class="d-block w-100"
               alt="..."
             />
             <h3 class="slide-desc">Seria XE</h3>
             <div class="bar">
-              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+              <ul
+                class="nav nav-tabs me-5 shadow rounded"
+                id="myTab"
+                role="tablist"
+              >
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
@@ -521,14 +553,18 @@
 
           <div class="carousel-item position-relative overflow-auto">
             <img
-              class="w-50 pb-5"
-              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_iE-1-parwjmcsntxm868di70rthl1yx0p10gnhl98phxvog.jpg"
+              class="w-50 ps-5 pb-5"
+              src="./assets/pic3.jpg"
               class="d-block w-100"
               alt="..."
             />
             <h3 class="slide-desc">Seria iE</h3>
             <div class="bar">
-              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+              <ul
+                class="nav nav-tabs me-5 shadow rounded"
+                id="myTab"
+                role="tablist"
+              >
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
@@ -639,19 +675,23 @@
           <div class="carousel-item position-relative overflow-auto">
             <img
               class="w-50 pb-5"
-              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_eMT-1-parwox61776tp0j7jzi1dnfmk4w7fki5vtot4o2ylc.jpg"
+              src="./assets/pic4.jpg"
               class="d-block w-100"
               alt="..."
             />
             <h3 class="slide-desc">Seria eMT3070B</h3>
             <div class="bar">
-              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+              <ul
+                class="nav nav-tabs shadow rounded me-5"
+                id="myTab"
+                role="tablist"
+              >
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
                     id="home-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#q-tab-pane"
+                    data-bs-target="#h-tab-pane"
                     type="button"
                     role="tab"
                     aria-controls="desc-tab-pane"
@@ -665,7 +705,7 @@
                     class="nav-link"
                     id="profile-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#w-tab-pane"
+                    data-bs-target="#j-tab-pane"
                     type="button"
                     role="tab"
                     aria-controls="app-tab-pane"
@@ -678,7 +718,7 @@
               <div class="tab-content" id="myTabContent">
                 <div
                   class="tab-pane fade show active pt-3 ps-2 pe-5"
-                  id="q-tab-pane"
+                  id="h-tab-pane"
                   role="tabpanel"
                   aria-labelledby="home-tab"
                   tabindex="0"
@@ -710,7 +750,7 @@
                 </div>
                 <div
                   class="tab-pane fade pt-4 ps-5 pe-5"
-                  id="w-tab-pane"
+                  id="j-tab-pane"
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                   tabindex="0"
@@ -747,19 +787,23 @@
           <div class="carousel-item position-relative overflow-auto">
             <img
               class="w-50 pb-5"
-              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_iP-1-parx2cb2s1k7gl1f6sc9z9ijw6qvbzs7290dsw6lr4.jpg"
+              src="./assets/pic5.jpg"
               class="d-block w-100"
               alt="..."
             />
             <h3 class="slide-desc">Seria iP</h3>
             <div class="bar">
-              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+              <ul
+                class="nav nav-tabs shadow rounded me-5"
+                id="myTab"
+                role="tablist"
+              >
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
                     id="home-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#q-tab-pane"
+                    data-bs-target="#l-tab-pane"
                     type="button"
                     role="tab"
                     aria-controls="desc-tab-pane"
@@ -773,7 +817,7 @@
                     class="nav-link"
                     id="profile-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#w-tab-pane"
+                    data-bs-target="#n-tab-pane"
                     type="button"
                     role="tab"
                     aria-controls="app-tab-pane"
@@ -786,7 +830,7 @@
               <div class="tab-content" id="myTabContent">
                 <div
                   class="tab-pane fade show active pt-3 ps-2 pe-5"
-                  id="q-tab-pane"
+                  id="l-tab-pane"
                   role="tabpanel"
                   aria-labelledby="home-tab"
                   tabindex="0"
@@ -819,7 +863,7 @@
                 </div>
                 <div
                   class="tab-pane fade pt-4 ps-5 pe-5"
-                  id="w-tab-pane"
+                  id="n-tab-pane"
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                   tabindex="0"
@@ -858,19 +902,23 @@
           <div class="carousel-item position-relative overflow-auto">
             <img
               class="w-50 pb-5"
-              src="https://www.multiprojekt.pl/wp-content/uploads/elementor/thumbs/Oferta_Weintek_serie_600x600_mTV-1-parxhtpdcsr8pcjrrza1juuw5ofj4i90uvvbdz859c.jpg"
+              src="./assets/pic6.jpg"
               class="d-block w-100"
               alt="..."
             />
             <h3 class="slide-desc">Seria mTV-100</h3>
             <div class="bar">
-              <ul class="nav nav-tabs shadow rounded" id="myTab" role="tablist">
+              <ul
+                class="nav nav-tabs shadow rounded me-5"
+                id="myTab"
+                role="tablist"
+              >
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
                     id="home-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#q-tab-pane"
+                    data-bs-target="#z-tab-pane"
                     type="button"
                     role="tab"
                     aria-controls="desc-tab-pane"
@@ -884,7 +932,7 @@
                     class="nav-link"
                     id="profile-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#w-tab-pane"
+                    data-bs-target="#m-tab-pane"
                     type="button"
                     role="tab"
                     aria-controls="app-tab-pane"
@@ -897,7 +945,7 @@
               <div class="tab-content" id="myTabContent">
                 <div
                   class="tab-pane fade show active pt-3 ps-2 pe-5"
-                  id="q-tab-pane"
+                  id="z-tab-pane"
                   role="tabpanel"
                   aria-labelledby="home-tab"
                   tabindex="0"
@@ -926,7 +974,7 @@
                 </div>
                 <div
                   class="tab-pane fade pt-4 ps-5 pe-5"
-                  id="w-tab-pane"
+                  id="m-tab-pane"
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                   tabindex="0"
@@ -983,8 +1031,8 @@
     </div>
   </body>
 
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+  <footer class=" py-3 my-4 d-md-block">
+    <ul class="nav footer justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item">
         <a href="#" class="nav-link px-2 text-muted">Darmowe oprogramowanie</a>
       </li>
